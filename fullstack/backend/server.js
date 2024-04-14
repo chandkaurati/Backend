@@ -6,9 +6,9 @@ app.get('/', (req,res)=>{
     res.send('server is ready')
 })
 
-app.get('/jokes', (req, res)=>{    
+app.get('/api/jokes', (req, res)=>{    
     const jokes = [
-        {
+        {  
           "question": "Why don't skeletons fight each other?",
           "answer": "They don't have the guts."
         },
@@ -36,5 +36,3 @@ const port = process.env.PORT || 3000
 app.listen(port, ()=>{
 console.log('express listinig')
 })
-
-
